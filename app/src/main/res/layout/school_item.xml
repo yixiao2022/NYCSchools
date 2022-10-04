@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/school_directory_name_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/location_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/school_directory_description_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/school_name"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/school_directory_description_size"
+        app:layout_constraintStart_toEndOf="@+id/location_header"
+        app:layout_constraintTop_toBottomOf="@+id/school_name"/>
+
+    <TextView
+        android:id="@+id/phone_number_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/school_directory_description_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location"/>
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/school_directory_description_size"
+        app:layout_constraintStart_toEndOf="@+id/phone_number_header"
+        app:layout_constraintTop_toBottomOf="@+id/location"/>
+
+    <TextView
+        android:id="@+id/school_email_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/school_email"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/school_directory_description_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number"/>
+
+    <TextView
+        android:id="@+id/school_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/school_directory_description_size"
+        app:layout_constraintStart_toEndOf="@+id/school_email_header"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number"
+        android:paddingBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
